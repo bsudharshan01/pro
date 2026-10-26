@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "migrate": "node migrate-sqlite-to-postgres.js"
+    "migrate": "node migrate-sqlite-to-postgres.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --check app.js && node --test"
   },
   "dependencies": {
     "pg": "^8.23.0"
